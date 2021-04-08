@@ -1,0 +1,24 @@
+body{
+    background-color: lightcyan;
+}
+
+.site-container{
+border: 2px solid black;
+width: 1200px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.site-header{ 
+height: 94px;
+}
+
+.site-main{
+height: 440px;
+background-color: blueviolet;
+}
+
+.site-footer{ 
+height: 94px;
+width: 1200px;
+}
