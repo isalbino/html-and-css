@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,23 +9,75 @@
     <link rel="stylesheet" href="Styles/reset.css">
     <link rel="stylesheet" href="Styles/blog.css">
 </head>
-<body>
-    <div class="site-container">
-     
-        <header class="site-header"></header>
-        <a href="#"><img src="images/fbr-ford-logo-header-brazil.webp" alt=""></a>
-         <ul>
-            <li> <a href="#">Veiculos</a></li>
-            <li> <a href="#">vendas</a></li>
-            <li> <a href="#">financiamentos</a></li>
-            <li> <a href="#">ofertas</a></li>
-            <li> <a href="#">concessionarias</a></li>
-            <li> <a href="#">fale conosco</a></li>
-                        
-         </ul>
 
-    <main class="site-main">PRINCIPAL</main>
-    <footer class="site-footer">RODAPé</footer>
+<body>
+
+    <div class="site">
+        <header class="site-header">
+            <h1 class="logo"> 
+                <a href="#">For Go Further</a> 
+</h1>
+    <ul class="menu clearfix">
+        <li class="menu__item"> <a href="#">Veiculos</a></li>
+        <li class="menu__item"> <a href="#">Vendas</a></li>
+        <li class="menu__item"> <a href="#">Financiamentos</a></li>
+        <li class="menu__item"> <a href="#">Ofertas</a></li>
+        <li class="menu__item"> <a href="#">Concessionarias</a></li>
+        <li class="menu__item"> <a href="#">Fale conosco</a></li>
+
+     </ul>
+    </header>
+    <main class="site-main clearfix">
+
+        <figure class="highlight">
+            <img class="highlight__image" src="images/f150.jpeg" width="1200" height="350" alt="">
+            <figcaption class="highligh__title">Siga em frente</figcaption>
+        </figure>
+
+            <div class="posts">
+
+            <article class="post">
+                <h1>Titulo da Publicação</h1>
+                <p class="post__discription"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam ad delectus repudiandae sit repellat similique cupiditate excepturi provident ducimus voluptatum quia, minus, voluptatibus maiores tempore mollitia iusto eligendi consequatur.</p>
+                <p  class="readmore"><a href="#"> Leia Mais </a></p>
+
+                <h1>Titulo da Publicação</h1>
+                <p class="post__discription"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam ad delectus repudiandae sit repellat similique cupiditate excepturi provident ducimus voluptatum quia, minus, voluptatibus maiores tempore mollitia iusto eligendi consequatur.</p>
+                <p  class="readmore"><a href="#"> Leia Mais </a></p>
+
+                <h1>Titulo da Publicação</h1>
+                <p class="post__discription"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam ad delectus repudiandae sit repellat similique cupiditate excepturi provident ducimus voluptatum quia, minus, voluptatibus maiores tempore mollitia iusto eligendi consequatur.</p>
+                <p  class="readmore"><a href="#"> Leia Mais </a></p>
+
+            </article>
+            </div>
+           
+    <div class="sidebar">
+    <h1 class="sidebar__title">Publicaçoes</h1>
+        <nav class="sidebar__nav">
+            <ul>
+                <li><a href="#">Out / 2020</a></li>
+                <li><a href="#">Nov / 2020</a></li>
+                <li><a href="#">Dez / 2020</a></li>
+                <li><a href="#">Jan / 2021</a></li>
+                <li><a href="#">Fev / 2021</a></li>
+                <li><a href="#">Mar / 2021</a></li>
+              </ul>
+            </nav>
+                </div>           
+        </main>
+
+        <footer class="site-footer clearfix">
+
+            <p>&copy; Ford Automoveis - 2021 - todos os Direitos reservados</p>
+            <nav class="icons">
+            <a href="#" class="icons__fb"> Facebook</a>
+            <a href="#" class=" icons__tw">Twitter</a>
+            <a href="#" class="icons__yt"> Youtube</a>
+        </nav>
+        
+        </footer>
     </div>
 </body>
+
 </html>
