@@ -1,24 +1,228 @@
 body{
-    background-color: lightcyan;
+    background-color: #efebeb;
+    font-family: arial,verdana, tahoma,sans-serif;
+    font-size: 100%; /* 100% / 1em */
+  /* font-weight: bold; */
+  /* font-style: italic; */
+  line-height: 1.5; /* 16px => 1 */
 }
 
-.site-container{
-border: 2px solid black;
+/*
+
+BEM (Block Element Modifier)
+
+.block { prop: value; }
+
+.block__element { prop: value; }
+
+.block__element--modifier { prop: value; }
+
+*/
+
+/* .block */
+.site { 
+/* border: 2px solid black; */
+/* border-width: 2px;
+border-style: solid;
+border-color: black; */
+background-color: white; 
 width: 1200px;
 margin-left: auto;
 margin-right: auto;
+   }
+   /* .block__element */
+.site__header {
+    height: auto;
+  /* background-color: yellow; */
+  /* overflow: visible; */
 }
 
-.site-header{ 
-height: 94px;
+.logo a {
+display: block;
+/*border: 4px solid red;*/
+width: 170px;
+height: 70px;
+/*background-color: lawngreen;*/
+background-image: url(../images/fbr-ford-logo-header-brazil.webp);
+background-repeat: no-repeat;
+background-position: left 5px top 5px;
+background-size: 200%; 
+    /* font-size: 0; */
+text-indent: -9000px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.menu {
+    /* border-top: 2px solid red; */
+    /* border-bottom: 2px solid red; */
+    display: block;
+    background-color: black;
+}
+.menu__item {
+/*border: 1px solid;*/
+display: block;
+float: left;
+width: 198px; /* calc(100% /6);*/
+text-align: center;
+line-height: 2.5;
+color: white;
+text-decoration: none ;
+}
+
+.menu__item:hover{
+  background-color: royalblue;
+  }
+
+.menu__item a {
+color: inherit;
+text-decoration: inherit;
+display: inherit;
 }
 
 .site-main{
-height: 440px;
-background-color: blueviolet;
+height: 600px;
+background-color: turquoise;
+}
+.highlight{
+position: relative;
+}
+.highlight__image{
+  display: block;
+}
+
+.highligh__title {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  word-spacing: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  /* font-style: italic; */
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  padding-left: 16px;
+  padding-right: 16px;
+  /* padding-top: 16px; */
+  /* padding-bottom: 16px; */
+  line-height: 2;
+  /* opacity: 0.7; */
+  
+  }
+ 
+  .posts{
+  /*border: 1px solid red;*/
+     background-color: white;
+   width: 1000px;
+   height: auto;
+    float: left;
+}
+.post {
+  margin-top: 32px;
+  /* border: 1px solid red; */
+  padding-left: 32px;
+  padding-right: 32px;
+
+}
+.post:last-of-type{
+  margin-bottom: 32px;
+}
+.post__title{
+font-size: 2em;
+}
+.post__description{
+  font-size: 1.1em;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.post__readmore{
+  display: inline;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 4px;
+  background-color: steelblue;
+}
+
+.post__readmore:hover {
+  background-color: royalblue;
+  color:white
+}
+.post__readmore a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.sidebar{
+  background-color: #dadada;
+  width:200px ;
+  min-height: 350px;
+  float: right;
+}
+.sidebar__title{
+  font-size: 1.2em;
+  padding: 16px;
+}
+.sidebar__nav{
+  padding: 0 0 16px 16px;
+}
+.sidebar__nav a {
+  color: steelblue;
+  text-decoration: none;
+  padding: 0 0 8px 0;
+  display: block;
+}
+.sidebar__nav a:hover {
+  color:royalblue;
+  text-decoration: underline;
 }
 
 .site-footer{ 
-height: 94px;
-width: 1200px;
+padding: 32px;
+background-color: black;
+color: white;
+}
+
+.copywrite{
+  float:left;
+  line-height: 35px;
+  color:rgba(255, 255, 255, 0.9);
+  }
+
+.icons{
+  float: right;
+}
+ .icons a{
+   display: block;
+   width: 35px;
+   height: 35px;
+   background-image: url(../images/social-icons.png);
+   text-indent: -9000px;
+   float:left;
+   margin-left:8px;
+ }
+.icons__fb{
+
+  background-position: -156px -130px;
+   
+}
+.icons__fb:hover {
+  background-position: -156px 0px;
+}
+
+.icons__tw {
+  background-position: -116px -130px;
+}
+
+.icons__tw:hover {
+  background-position: -116px 0px;
+}
+
+.icons__yt {
+  background-position: -546px -130px;
+}
+
+.icons__yt:hover {
+  background-position: -546px 0px;
 }
