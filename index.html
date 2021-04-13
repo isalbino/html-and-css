@@ -1,83 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" href="Styles/reset.css">
-    <link rel="stylesheet" href="Styles/blog.css">
+    <title>Site responsivo</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="responsivo.css">
 </head>
-
 <body>
+    <div class="container">
+ <header>
+<h1> <a href="#"> Site Responsivo</a></h1>
+    <nav>
+        <ul class="clearfix">
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href="#">Item 4</a></li>
+            <li><a href="#">Item 5</a></li>
+            <li><a href="#">Item 6</a></li>
+        </ul>
+    </nav>       
+</header>
 
-    <div class="site">
-        <header class="site-header">
-            <h1 class="logo"> 
-                <a href="#">For Go Further</a> 
-</h1>
-    <ul class="menu clearfix">
-        <li class="menu__item"> <a href="#">Veiculos</a></li>
-        <li class="menu__item"> <a href="#">Vendas</a></li>
-        <li class="menu__item"> <a href="#">Financiamentos</a></li>
-        <li class="menu__item"> <a href="#">Ofertas</a></li>
-        <li class="menu__item"> <a href="#">Concessionarias</a></li>
-        <li class="menu__item"> <a href="#">Fale conosco</a></li>
+        <main>
+            <picture>
+                <source media="(min-width: 1024px)" srcset="https://placekitten.com/1024/350">
+                <source media="(min-width: 768px)" srcset="https://placekitten.com/768/320">
+                <source media="(min-width: 425px)" srcset="https://placekitten.com/425/240">
+                <source media="(min-width: 375px)" srcset="https://placekitten.com/375/240">
+                <img src="https://placekitten.com/320/240" alt="">
+              </picture>
 
-     </ul>
-    </header>
-    <main class="site-main clearfix">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi distinctio dolore qui amet aspernatur exercitationem, obcaecati fuga? Aperiam eum dolor, eveniet repellendus omnis, similique ea sunt tempore minus voluptate itaque.</p>
+            <p>Labore atque, sapiente reprehenderit dolor officia eaque tenetur, aut magni natus dicta nostrum sint sit? Qui iste suscipit optio expedita! Libero vitae repellendus nam similique impedit vel incidunt cupiditate laboriosam.</p>
+            <p>Facere minima nemo, beatae quasi dolores sapiente. Porro veritatis reiciendis eos mollitia. At quis accusamus recusandae praesentium, iusto neque et, eos ipsa cumque voluptatum possimus, harum consequuntur rerum aut similique.</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SZ3XNo8IuME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            <p>Doloremque aliquid corporis libero facilis tempora ad facere fugiat quod eaque voluptas nihil veritatis vitae quo hic, nobis neque architecto itaque odit placeat iste possimus ex nam. Dolore, error aut.</p>
+            <p>Consequatur porro, quae aut nihil ab, tempora, qui distinctio fuga cumque obcaecati dolorem voluptas vero eligendi. Labore aperiam ab debitis, numquam soluta quaerat ducimus quia facilis. Ipsum ex expedita nisi.</p>
 
-        <figure class="highlight">
-            <img class="highlight__image" src="images/f150.jpeg" width="1200" height="350" alt="">
-            <figcaption class="highligh__title">Siga em frente</figcaption>
-        </figure>
-
-            <div class="posts">
-
-            <article class="post">
-                <h1>Titulo da Publicação</h1>
-                <p class="post__discription"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam ad delectus repudiandae sit repellat similique cupiditate excepturi provident ducimus voluptatum quia, minus, voluptatibus maiores tempore mollitia iusto eligendi consequatur.</p>
-                <p  class="readmore"><a href="#"> Leia Mais </a></p>
-
-                <h1>Titulo da Publicação</h1>
-                <p class="post__discription"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam ad delectus repudiandae sit repellat similique cupiditate excepturi provident ducimus voluptatum quia, minus, voluptatibus maiores tempore mollitia iusto eligendi consequatur.</p>
-                <p  class="readmore"><a href="#"> Leia Mais </a></p>
-
-                <h1>Titulo da Publicação</h1>
-                <p class="post__discription"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam ad delectus repudiandae sit repellat similique cupiditate excepturi provident ducimus voluptatum quia, minus, voluptatibus maiores tempore mollitia iusto eligendi consequatur.</p>
-                <p  class="readmore"><a href="#"> Leia Mais </a></p>
-
-            </article>
-            </div>
-           
-    <div class="sidebar">
-    <h1 class="sidebar__title">Publicaçoes</h1>
-        <nav class="sidebar__nav">
-            <ul>
-                <li><a href="#">Out / 2020</a></li>
-                <li><a href="#">Nov / 2020</a></li>
-                <li><a href="#">Dez / 2020</a></li>
-                <li><a href="#">Jan / 2021</a></li>
-                <li><a href="#">Fev / 2021</a></li>
-                <li><a href="#">Mar / 2021</a></li>
-              </ul>
-            </nav>
-                </div>           
         </main>
-
-        <footer class="site-footer clearfix">
-
-            <p>&copy; Ford Automoveis - 2021 - todos os Direitos reservados</p>
-            <nav class="icons">
-            <a href="#" class="icons__fb"> Facebook</a>
-            <a href="#" class=" icons__tw">Twitter</a>
-            <a href="#" class="icons__yt"> Youtube</a>
-        </nav>
         
-        </footer>
-    </div>
-</body>
 
+        <footer>RODAPÉ</footer>
+    </div>
+    
+</body>
 </html>
